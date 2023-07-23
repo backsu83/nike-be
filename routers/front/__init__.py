@@ -1,5 +1,6 @@
 import os
 
+from flask import request
 from google.protobuf import timestamp_pb2
 import datetime
 import json
@@ -11,6 +12,7 @@ from google.cloud import storage
 from werkzeug.datastructures import FileStorage
 import datetime
 from google.cloud import storage
+from werkzeug.utils import secure_filename
 
 from models import db, AssetModel, ProductModel, OrderModel, OrderAssetMap, OptionModel
 from routers.fields import Front, front_order_field, admin_asset_field, front_asset_field, \
@@ -127,7 +129,28 @@ class OrderResponse(Resource):
             db.session.rollback()
             print(e)
 
+@Front.route('upload')
+class UploadFile(Resource):
+    def post(self):
+        parser = reqparse.RequestParser()
+        parser.add_argument('images', type=FileStorage, location='files', action='append')
+        args = parser.parse_args()
+        images = args['images']
 
+        for image in images:
+            if image and allowed_file(image.filename):
+                filename = secure_filename(image.filename)
+                save_path = os.path.join('static/img', filename)
+                image.save(save_path)
+                host_url = request.host_url  # 현재 호스트의 URL을 가져옴
+                image_url = f"{host_url}{save_path}"  # 이미지의 URL을 생성
+        return {"img": image_url}
+        # return {"result": False}, 400
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'jpg', 'jpeg', 'png'}
+
+"""
 @Front.route('upload')
 class UploadFile(Resource):
     def post(self):
@@ -164,7 +187,7 @@ class UploadFile(Resource):
 
                 return {"img": 'static/img/{0}'.format(image.filename)}
         return {"result": False}, 400
-
+"""
 
 @Front.route('signed')
 class UploadFile(Resource):

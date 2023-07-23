@@ -43,7 +43,7 @@ ORDER_STATE = ['order', 'paid', 'wip', 'done', 'taken']
 
 @Admin.route('product')
 class ProductResponse(Resource):
-    @login_required
+    # @login_required
     @Admin.expect(admin_product_field)
     def post(self):
         parser = reqparse.RequestParser()
@@ -58,7 +58,7 @@ class ProductResponse(Resource):
         #     print(E)
         #     return {"result": False, "error": 'db type error'}, 400
 
-    @login_required
+    # @login_required
     @Admin.expect(admin_product_field)
     @Admin.response(200, 'Success')
     def put(self):
@@ -79,7 +79,7 @@ class ProductResponse(Resource):
             db.session.rollback()
             return {"result": False, "error": 'db type error'}, 400
 
-    @login_required
+    # @login_required
     @Admin.expect(admin_product_field)
     @Admin.response(200, 'Success')
     def delete(self):
@@ -100,7 +100,7 @@ class ProductResponse(Resource):
 
 @Admin.route('option')
 class OptionResponse(Resource):
-    @login_required
+    # @login_required
     @Admin.response(200, 'Success')
     @marshal_with(admin_option_list_field)
     def get(self):
@@ -110,7 +110,7 @@ class OptionResponse(Resource):
 
         return {"option_list": OptionModel.query.order_by(OptionModel.id.desc()).all()}
 
-    @login_required
+    # @login_required
     @Admin.expect(admin_option_field)
     def post(self):
         parser = reqparse.RequestParser()
@@ -126,7 +126,7 @@ class OptionResponse(Resource):
         #     print(E)
         #     return {"result": False, "error": 'db type error'}, 400
 
-    @login_required
+    # @login_required
     @Admin.doc(params={'product': '업데이트하려는 product 정보 (admin_product_field model 참조)'})
     @Admin.response(200, 'Success')
     def put(self):
@@ -153,7 +153,7 @@ class OptionResponse(Resource):
             db.session.rollback()
             return {"result": False}, 500
 
-    @login_required
+    # @login_required
     @Admin.doc(params={'id': '삭제 하려는 에셋 ID'})
     @Admin.response(200, 'Success')
     def delete(self):
@@ -171,7 +171,7 @@ class OptionResponse(Resource):
 
 @Admin.route('asset')
 class OptionResponse(Resource):
-    @login_required
+    # @login_required
     @Admin.expect(admin_asset_field)
     def post(self):
         parser = reqparse.RequestParser()
@@ -186,7 +186,7 @@ class OptionResponse(Resource):
         #     print(E)
         #     return {"result": False, "error": 'db type error'}, 400
 
-    @login_required
+    # @login_required
     @Admin.doc(params={'asset': '업데이트하려는 에셋 정보 (front_asset_field model 참조)'})
     @Admin.response(200, 'Success')
     def put(self):
@@ -205,7 +205,7 @@ class OptionResponse(Resource):
         #     print(E)
         #     return {"result": False, "error": 'db type error'}, 400
 
-    @login_required
+    # @login_required
     @Admin.doc(params={'id': '삭제 하려는 에셋 ID'})
     @Admin.response(200, 'Success')
     def delete(self):
@@ -227,7 +227,7 @@ class OptionResponse(Resource):
 @Admin.route('order')
 # @Admin.doc(params={'id': '주문 번호'})
 class OrderResponse(Resource):
-    @login_required
+    # @login_required
     @Admin.response(200, 'Success')
     @marshal_with(admin_order_list_field)
     def get(self):
@@ -279,7 +279,7 @@ class OrderResponse(Resource):
             # db.session.close()
             return {"result": False}, 400
 
-    @login_required
+    # @login_required
     @Admin.doc(params={'order': '업데이트 하려는 order 정보 (admin_order_field model 참조)'})
     @Admin.response(200, 'Success')
     # @Admin.expect({'order': admin_order_field})
@@ -342,7 +342,7 @@ class LoginResponse(Resource):
 
 @Admin.route('logout')
 class LoginResponse(Resource):
-    @login_required
+    # @login_required
     def get(self):
         logout_user()
         return {"result": True}
