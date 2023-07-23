@@ -81,8 +81,8 @@ api.add_namespace(Front, '/')
 api.add_namespace(Admin, '/admin/')
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=job_delete_img, trigger="interval", seconds=60)
-# schedule.add_job(func=job_delete_img, trigger="cron", hour=0, minute=0, second=0) // 매일 자정
+# scheduler.add_job(func=job_delete_img, trigger="interval", seconds=60)
+scheduler.add_job(func=job_delete_img, trigger="cron", hour=0, minute=0, second=0) # 매일 자정
 
 scheduler.start()
 
