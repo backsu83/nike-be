@@ -140,7 +140,7 @@ class UploadFile(Resource):
         for image in images:
             if image and allowed_file(image.filename):
                 filename = secure_filename(image.filename)
-                save_path = os.path.join('static/img', filename)
+                save_path = os.path.join('static/resource', filename)
                 image.save(save_path)
                 host_url = request.host_url  # 현재 호스트의 URL을 가져옴
                 image_url = f"{host_url}{save_path}"  # 이미지의 URL을 생성
