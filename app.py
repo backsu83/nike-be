@@ -12,7 +12,9 @@ import os
 import datetime
 
 app = Flask(__name__)
+#app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://admin:figrontline!0704@34.64.207.81:5432/nike_by_hongdae"
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://admin:figrontline!0704@15.164.9.111:5432/nike_by_hongdae"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # flask-auth environment variables
 app.config['SECRET_KEY'] = 'Nikey#Shoe!eeFindr@1235'

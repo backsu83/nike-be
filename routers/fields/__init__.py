@@ -42,6 +42,11 @@ admin_asset_field = Admin.model('에셋 등록 정보', {
     "options": fields.Nested(front_option_field)
 })
 
+admin_login_field = Admin.model('로그인 입력 정보', {
+    "id": fields.String(description="id", required=True),
+    "pw": fields.String(description="pw", required=True),
+})
+
 front_asset_list_field = Front.model('에셋 리스트 정보', {
     "asset_list": fields.List(fields.Nested(front_asset_field))
 })

@@ -2,7 +2,7 @@ from flask_restx import Resource, Namespace, fields, marshal_with, reqparse
 from models import db, ProductModel, OptionModel, AssetModel, OrderModel, UserModel, OrderAssetMap, OptionAssetMap
 
 from routers.fields import admin_product_field, admin_order_list_field, admin_order_field, \
-    admin_option_field, admin_option_list_field, admin_asset_field, front_asset_list_field, front_asset_field
+    admin_option_field, admin_option_list_field, admin_asset_field, front_asset_list_field, front_asset_field, admin_login_field
 
 from flask_login import LoginManager, login_required, logout_user, login_user
 from flask_bcrypt import Bcrypt
@@ -309,10 +309,8 @@ def load_user(user_id):
 
 
 @Admin.route('login')
-@Admin.doc(params={'id': 'ID', 'pw': '비밀번호'})
 class LoginResponse(Resource):
-    @Admin.expect(
-        {"id": fields.String(description='id', required=True), "pw": fields.String(description='비밀번호', required=True)})
+    @Admin.expect(admin_login_field)
     def post(self):
         parser = reqparse.RequestParser()
         parser.add_argument('id', help="관리자 계정")
