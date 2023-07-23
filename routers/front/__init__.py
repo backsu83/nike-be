@@ -147,6 +147,24 @@ class UploadFile(Resource):
         return {"img": image_url}
         # return {"result": False}, 400
 
+
+@Front.route('signed')
+class UploadFile(Resource):
+    def post(self):
+        parser = reqparse.RequestParser()
+        parser.add_argument('images', type=FileStorage, location='files', action='append')
+        args = parser.parse_args()
+        images = args['images']
+
+        for image in images:
+            if image and allowed_file(image.filename):
+                filename = secure_filename(image.filename)
+                save_path = os.path.join('static/img', filename)
+                image.save(save_path)
+                host_url = request.host_url  # 현재 호스트의 URL을 가져옴
+                image_url = f"{host_url}{save_path}"  # 이미지의 URL을 생성
+        return {"url": image_url}
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'jpg', 'jpeg', 'png'}
 
@@ -187,7 +205,6 @@ class UploadFile(Resource):
 
                 return {"img": 'static/img/{0}'.format(image.filename)}
         return {"result": False}, 400
-"""
 
 @Front.route('signed')
 class UploadFile(Resource):
@@ -196,6 +213,8 @@ class UploadFile(Resource):
         parser.add_argument('images')
         args = parser.parse_args()
         image = args['images']
+        
+        
         storage_client = storage.Client.from_service_account_json("./nike-by-hongdae-1b876df98ff1.json")
         bucket = storage_client.get_bucket("nike-by-hongdae-front")
         print(image)
@@ -211,5 +230,5 @@ class UploadFile(Resource):
                 content_type="application/octet-stream",
             )
             return {"url": url}
-        else:
-            return {"result": False}, 400
+"""
+
