@@ -1,3 +1,6 @@
+import atexit
+import time
+
 from flask import Flask
 from flask_cors import CORS
 from flask_restx import Api, Resource, reqparse
@@ -6,6 +9,7 @@ from models import db, OrderModel
 
 from routers.manager import Admin, login_manager, bcrypt
 from routers.front import Front
+from apscheduler.schedulers.background import BackgroundScheduler
 
 import os
 
@@ -29,6 +33,7 @@ cors = CORS(app, resources={
 # cors = CORS(app, supports_credentials=True, origins="*")
 
 app.config['SQLALCHEMY_POOL_SIZE'] = 20
+app.static_folder = 'static'  # 정적 파일이 위치한 폴더를 'static'으로 설정
 
 api = Api(app, doc='/docs')
 db.init_app(app)
@@ -42,11 +47,15 @@ if 'PUBSUB_TOPIC' in os.environ:
     app.config['PUBSUB_VERIFICATION_TOKEN'] = os.environ['PUBSUB_VERIFICATION_TOKEN']
 
 
-@api.route('/alive')
-class HelloWorld(Resource):
-    def get(self):
-        return {"hello": "world!"}, 201, {"hi": "hello"}
 
+def job_delete_img():
+    print("job_delete_img start ...")
+    static_img_folder = os.path.join(app.static_folder, 'img') #특정 폴더일 경우는 이부분 수정
+    for filename in os.listdir(static_img_folder):
+        file_path = os.path.join(static_img_folder, filename)
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+            print(f"Deleted file: {file_path}")
 
 @api.route('/deidentify')
 class PubSubHandler(Resource):
@@ -68,6 +77,14 @@ class PubSubHandler(Resource):
 
         return 200
 
-
 api.add_namespace(Front, '/')
 api.add_namespace(Admin, '/admin/')
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(func=job_delete_img, trigger="interval", seconds=60)
+# schedule.add_job(func=job_delete_img, trigger="cron", hour=0, minute=0, second=0) // 매일 자정
+
+scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())
