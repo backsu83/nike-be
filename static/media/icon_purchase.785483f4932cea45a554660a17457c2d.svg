@@ -1,0 +1,47 @@
+<svg id="구성_요소_10_1" data-name="구성 요소 10 – 1" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <rect id="사각형_5072" data-name="사각형 5072" width="4" height="4" transform="translate(4 10.4)"/>
+  <rect id="사각형_5085" data-name="사각형 5085" width="4" height="4" transform="translate(4 41.6)"/>
+  <rect id="사각형_5078" data-name="사각형 5078" width="4" height="4" transform="translate(48 10.4)"/>
+  <rect id="사각형_5079" data-name="사각형 5079" width="4" height="4" transform="translate(48 41.6)"/>
+  <rect id="사각형_5073" data-name="사각형 5073" width="3" height="3" transform="translate(8 8)"/>
+  <rect id="사각형_5104" data-name="사각형 5104" width="3" height="4" transform="translate(8 10.4)" fill="none"/>
+  <rect id="사각형_5115" data-name="사각형 5115" width="3" height="4" transform="translate(8 41.6)" fill="none"/>
+  <rect id="사각형_5107" data-name="사각형 5107" width="3" height="4" transform="translate(45 10.4)" fill="none"/>
+  <rect id="사각형_5110" data-name="사각형 5110" width="3" height="4" transform="translate(45 41.6)" fill="none"/>
+  <rect id="사각형_5105" data-name="사각형 5105" width="4" height="4" transform="translate(10.4 10.4)" fill="none"/>
+  <rect id="사각형_5114" data-name="사각형 5114" width="4" height="4" transform="translate(10.4 41.6)" fill="none"/>
+  <rect id="사각형_5108" data-name="사각형 5108" width="4" height="4" transform="translate(41.6 10.4)" fill="none"/>
+  <rect id="사각형_5111" data-name="사각형 5111" width="4" height="4" transform="translate(41.6 41.6)" fill="none"/>
+  <rect id="사각형_5106" data-name="사각형 5106" width="4" height="3" transform="translate(10.4 8)" fill="none"/>
+  <rect id="사각형_5113" data-name="사각형 5113" width="4" height="3" transform="translate(10.4 45)" fill="none"/>
+  <rect id="사각형_5109" data-name="사각형 5109" width="4" height="3" transform="translate(41.6 8)" fill="none"/>
+  <rect id="사각형_5112" data-name="사각형 5112" width="4" height="3" transform="translate(41.6 45)" fill="none"/>
+  <rect id="사각형_5083" data-name="사각형 5083" width="3" height="3" transform="translate(8 45)"/>
+  <rect id="사각형_5076" data-name="사각형 5076" width="3" height="3" transform="translate(45 8)"/>
+  <rect id="사각형_5080" data-name="사각형 5080" width="3" height="3" transform="translate(45 45)"/>
+  <rect id="사각형_5074" data-name="사각형 5074" width="4" height="4" transform="translate(10.4 4)"/>
+  <rect id="사각형_5082" data-name="사각형 5082" width="4" height="4" transform="translate(10.4 48)"/>
+  <rect id="사각형_5077" data-name="사각형 5077" width="4" height="4" transform="translate(41.6 4)"/>
+  <rect id="사각형_5081" data-name="사각형 5081" width="4" height="4" transform="translate(41.6 48)"/>
+  <rect id="사각형_5075" data-name="사각형 5075" width="29" height="4" transform="translate(13.5)"/>
+  <rect id="사각형_5086" data-name="사각형 5086" width="29" height="4" transform="translate(4 13.5) rotate(90)"/>
+  <rect id="사각형_5102" data-name="사각형 5102" width="29" height="48" transform="translate(52 13.5) rotate(90)" fill="none"/>
+  <rect id="사각형_5087" data-name="사각형 5087" width="29" height="4" transform="translate(56 13.5) rotate(90)"/>
+  <rect id="사각형_5084" data-name="사각형 5084" width="29" height="4" transform="translate(13.5 52)"/>
+  <rect id="사각형_5103" data-name="사각형 5103" width="29" height="48" transform="translate(42.5 52) rotate(180)" fill="none"/>
+  <g id="그룹_10629" data-name="그룹 10629" transform="translate(15.5 8)">
+    <rect id="사각형_5089" data-name="사각형 5089" width="4" height="4" transform="translate(0 14.595)"/>
+    <rect id="사각형_5095" data-name="사각형 5095" width="4" height="3" transform="translate(21 22.395)"/>
+    <rect id="사각형_5098" data-name="사각형 5098" width="4" height="4" transform="translate(21 25.297)"/>
+    <rect id="사각형_5090" data-name="사각형 5090" width="4" height="4" transform="translate(0 7.784)"/>
+    <rect id="사각형_5097" data-name="사각형 5097" width="4" height="3" transform="translate(0 11.684)"/>
+    <rect id="사각형_5093" data-name="사각형 5093" width="4" height="3" transform="translate(21 29.211)"/>
+    <rect id="사각형_5092" data-name="사각형 5092" width="4" height="4" transform="translate(21 7.784)"/>
+    <rect id="사각형_5100" data-name="사각형 5100" width="3" height="4" transform="translate(11)"/>
+    <rect id="사각형_5101" data-name="사각형 5101" width="3" height="38" transform="translate(11 2)"/>
+    <rect id="사각형_5096" data-name="사각형 5096" width="4" height="3" transform="translate(0 29.211)"/>
+    <rect id="사각형_5088" data-name="사각형 5088" width="16.77" height="3.66" transform="translate(20.839 21.917) rotate(180)"/>
+    <rect id="사각형_5091" data-name="사각형 5091" width="16.77" height="3.66" transform="translate(20.839 7.853) rotate(180)"/>
+    <rect id="사각형_5094" data-name="사각형 5094" width="16.77" height="3.66" transform="translate(4.126 32.472)"/>
+  </g>
+</svg>

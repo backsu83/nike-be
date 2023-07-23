@@ -1,0 +1,19 @@
+<svg id="DNA_14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102.982" height="73.992" viewBox="0 0 102.982 73.992">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_5826" data-name="사각형 5826" width="102.982" height="73.992" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="패스_20575" data-name="패스 20575" d="M267.578,7.169h89.109V50.93H267.578Zm-7.04,66.823H363.521V0H260.538Z" transform="translate(-260.538)" fill="#6d6e71"/>
+  <g id="그룹_11147" data-name="그룹 11147">
+    <g id="그룹_11146" data-name="그룹 11146" transform="translate(0)" clip-path="url(#clip-path)">
+      <path id="패스_20576" data-name="패스 20576" d="M269.359,52.745h89.109V8.984H269.359Zm9.127-20.137c1.543-5.816,5.359-10.205,9.078-14.527-1.913,3.989-3.445,9.622.879,12.788a7.066,7.066,0,0,0,5.952.98L350.208,17.54,294.967,41c-4.944,2.092-11.6,3.424-15.45-1.223-1.662-2-1.7-4.658-1.03-7.166" transform="translate(-262.32 -1.815)" fill="#d20c22"/>
+      <path id="패스_20577" data-name="패스 20577" d="M265.53,5.1V71.663h95.212L360.748,5.1ZM357.7,51.96H268.586V8.2H357.7Z" transform="translate(-261.546 -1.029)" fill="#070303"/>
+      <rect id="사각형_5825" data-name="사각형 5825" width="89.1" height="13.493" transform="translate(7.039 54.038)" fill="#6d6e71"/>
+      <path id="패스_20578" data-name="패스 20578" d="M278.42,71.9h8.447v1.828H283.75v5.518h-2.216V73.725H278.42Z" transform="translate(-264.15 -14.522)" fill="#070303"/>
+      <path id="패스_20579" data-name="패스 20579" d="M303.4,71.9H311.3v1.7h-5.689v1.183h5.393V76.3h-5.393v1.177h5.818v1.762H303.4Z" transform="translate(-269.195 -14.522)" fill="#070303"/>
+      <path id="패스_20580" data-name="패스 20580" d="M331.288,71.9h2.887l3.972,7.347h-2.466l-.687-1.3h-4.5l-.648,1.3h-2.476Zm.042,4.466h2.834L332.728,73.6Z" transform="translate(-274.038 -14.522)" fill="#070303"/>
+      <path id="패스_20581" data-name="패스 20581" d="M355.627,71.9h3.406l2.505,4.734,2.507-4.734h3.4v7.347h-2.155V73.969h-.02l-2.907,5.274h-1.658l-2.9-5.274h-.022v5.274h-2.155Z" transform="translate(-279.744 -14.522)" fill="#070303"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d3bee76.css",
+    "main.js": "/static/js/main.da6dd590.js",
+    "static/media/pala.ttf": "/static/media/pala.592ae7c8b315eb07dc20.ttf",
+    "static/media/gide_img.png": "/static/media/gide_img.3ba151eb589702215107.png",
+    "static/media/palabi.ttf": "/static/media/palabi.e3bda5ac9f529c2641c4.ttf",
+    "static/media/guide_img.png": "/static/media/guide_img.855dde374c59b50948e1.png",
+    "static/media/NeuePixelGrotesk_Regular.ttf": "/static/media/NeuePixelGrotesk_Regular.1bb77375b1e8f05bc389.ttf",
+    "static/media/HelveticaNeue.otf": "/static/media/HelveticaNeue.60178aa8ae155807ff45.otf",
+    "static/media/HelveticaNeue_bold.otf": "/static/media/HelveticaNeue_bold.4291b351b26f2740898f.otf",
+    "static/media/Futura_Condensed_Extra_Bold.otf": "/static/media/Futura_Condensed_Extra_Bold.74aa3b0f71d46d0801ce.otf",
+    "static/media/icon_back.svg": "/static/media/icon_back.e1a340d8d65f3ec9f6dfe76f51e4cc3f.svg",
+    "static/media/guide_scan_img.png": "/static/media/guide_scan_img.3b60ed12b269cbe92f5d.png",
+    "static/media/product_img3.png": "/static/media/product_img3.c8566949e1ab593d39e0.png",
+    "static/media/product_img1.png": "/static/media/product_img1.69d0d5950be64501de4f.png",
+    "static/media/product_img2.png": "/static/media/product_img2.1f893b3eeb06eac0ccaf.png",
+    "static/media/main_logo.svg": "/static/media/main_logo.720d38df27ed47e80fc1673b5bd91ddf.svg",
+    "static/media/line_pc.svg": "/static/media/line_pc.24db89a420b7d939c9f1.svg",
+    "static/media/icon_select_arrow.svg": "/static/media/icon_select_arrow.fa774660192f47bafc379138a192386d.svg",
+    "static/media/icon_all.svg": "/static/media/icon_all.d8da4e52995cceb316613984939cb586.svg",
+    "static/media/icon_color_none.svg": "/static/media/icon_color_none.07406a598adeb524f20e40860f79e3ee.svg",
+    "static/media/icon_color.svg": "/static/media/icon_color.d846a62208ea39a11e5de3048eb9914a.svg",
+    "index.html": "/index.html",
+    "static/media/icon_line.svg": "/static/media/icon_line.a310102c7d7296724bab.svg",
+    "static/media/icon_checked.svg": "/static/media/icon_checked.d4329f4fc69118a51311.svg",
+    "main.8d3bee76.css.map": "/static/css/main.8d3bee76.css.map",
+    "main.da6dd590.js.map": "/static/js/main.da6dd590.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d3bee76.css",
+    "static/js/main.da6dd590.js"
+  ]
+}

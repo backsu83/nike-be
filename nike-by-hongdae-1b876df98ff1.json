@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nike-by-hongdae",
+  "private_key_id": "1b876df98ff1c5bc0dfed6d8d47d7f8e73059abf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2N9pcCfCMBYk2\nsJm8lIM/XXuTPVpk87Vgc+rUcE+/Ku491rOFoKID3QaI1hPCkc5jSRx94xUj9SfH\nEIDTEa9G/dXkvojsI/FLuwuM1u0XpLFr7YVNtrb8UP6oMV5tdtS6bZYjpd65M7Kv\nHkmNvP9OxqZ8UyKbWp3ZpcD+sWXeYCjoUSIG7Z+Bouw2w9wGsoS0JxqxfYdwBfKC\nQNXj/36yqJLIdnxX7dPo8tccBYjVVCPRKZ6pBmVSWxtm+4j1JD211p8SyErIuUXp\n7wWuQDKiy+dDAv388xfNZ50jEhS3HBLdtXJc9ZsPQxyiq1fPvGF9l7VheNyf139X\nsDQjn0tpAgMBAAECggEAFUdr+UwS2nMqDSgt59sLAasTy4PCauAX6gHXZkQQWAF2\nLWQFdmEmEl/tC60+RP48dRU8XcoXNaoDIWjAtoVN6/MoF4yVlkfzPXYEGQgfS1/I\n9VLZOpRQBaKavn73aT6ThIrYGeUcn5GVOASIL+RmhydFGWcm9y/rl5dW9Jc4T3HG\nP3slBWx2yJabZWiDuCjZcFautK7/hUFheno4uf5fn8XBMvjyDDo1lBxoTAFnj379\nH3PzgFwQ3LRyMETHJHEa9ReF/tLPYsV2z8JZw17FKHjoxAHwCerhp+WGpPpBTOB+\nXpJZsJn9Wt8Z/slX4PjSgbfug2Z84onlZdtShUp2JQKBgQDmq3wBu1QbIlwGjoMa\nSXfL+2gq3td4g+sgV3xDAe+6RyEckpSIWM3wntZH4CTIOEY8QmAL1w4JLsFmyNov\nxMcpE5IGSTrE81JcVwBUhnqz31ljqsHxrGy0ftEK3C/jPnv+Rv4jsGN5gBzytaXs\nKgtaTWmbkIARNqUNb+T/8TzVJQKBgQDKOk+HBHo55xhm/7gLA3rolQRxsB8hq7m5\nmDNgvi7r/qMiU9C+E/jRCk5z+aYc1GU6ztmH1pekAV70V0BNA6IEBxyLzBOQ5xw/\n5GTgv0GeQ94MHVxmcQ6+ZfjNyLbQ9KOeLJKFPaMEL75DwL0uFsdZI5JRMrh6S07/\nGwGn7fJj9QKBgH9HbDuAZB48zU6I4Gpm04VoicfuAjLrh5fm7hgDP4YnrWuYrgC2\nD5yP6Gjskx8vfgHOFjUySvpiJDFU7p+hEsvlkpOJYLZAFNgC4ZnCQn5x5V8LX8y8\neZb2yt4VNQ9M8RoTjjOfJqRqPo7mEFHJuU3wnS9Lgn79CgHqFg/rysdJAoGBAIcx\nplsIJkIxeYHaMQrD39Y/UUJD0PwslrQ5yRdC7ZF9oUfgqqt4JJ5zenFUE7YwVCCV\nip2iW6wb8oP9FJKn/BcfPflDjE0SBDO+l6Ycllyc2IRW2J/vs0CcYVIJfhaBhiTH\nfYiv5Rx2YodfAdofBlRUUIwSEXxIfl5Tiq7eh25FAoGBAOU/63yOjJacVAXXNz0k\nkzqNqo7uBJ0yh0Sxu+0Ap6OoWs8vhwFk3fHvFk5PwuxtSBXyLTuYED6I25CZprlT\nnTIYO40ksMQMf4qpfOfusIDuZy6HZ8gqssRUNisnfccI6fLJvj2MFdiBYY8uuFQ4\nwtGK8yya57Ex5iJdr/vCgfW5\n-----END PRIVATE KEY-----\n",
+  "client_email": "nike-by-hongdae@appspot.gserviceaccount.com",
+  "client_id": "104040028527506442945",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nike-by-hongdae%40appspot.gserviceaccount.com"
+}
