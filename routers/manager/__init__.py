@@ -22,8 +22,8 @@ KST = timezone('Asia/Seoul')
 
 send_url = 'https://apis.aligo.in/send/'
 
-sms_data = {'key': '3j5md0dzzts07d2li4yh0tqtwpo55c9m',  # api key
-            'userid': 'figcoltd',  # 알리고 사이트 아이디
+sms_data = {'key': '6j0abcafoim4l1mgtf0fpbuvbp1r1hyb',  # api key
+            'userid': 'redmussa',  # 알리고 사이트 아이디
             'sender': '02-333-2094',  # 발신번호
             'msg': 'NIKE BY YOU\n나이키 스타일 홍대\n주문하신 커스텀이 완료되었습니다.\n직원에게 문의하여 제품을 픽업해 주세요.',  # 문자 내용
             #'msg': 'NIKE BY YOU\n나이키 스타일 홍대\n%고객명%님 주문하신 커스텀이 완료되었습니다.\n직원에게 문의하여 제품을 픽업해 주세요.',  # 문자 내용
