@@ -1,19 +1,15 @@
 import atexit
-import time
+import datetime
+import os
 
+from apscheduler.schedulers.background import BackgroundScheduler
 from flask import Flask
 from flask_cors import CORS
 from flask_restx import Api, Resource, reqparse
 
 from models import db, OrderModel
-
-from routers.manager import Admin, login_manager, bcrypt
 from routers.front import Front
-from apscheduler.schedulers.background import BackgroundScheduler
-
-import os
-
-import datetime
+from routers.manager import Admin, login_manager, bcrypt
 
 app = Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://admin:figrontline!0704@34.64.207.81:5432/nike_by_hongdae"
@@ -57,6 +53,17 @@ def job_delete_img():
             os.remove(file_path)
             print(f"Deleted file: {file_path}")
 
+def job_delete_privacy():
+
+    # order_list : 개인정보가 들어있는 리스트
+    # 수정된 시간에 days 더한 시간이 현재 시간보다 전이라면 삭제하는 로직
+    # 아래 필터의 datetime.timedeltas(days=1) days 의 값을 나이키와 논의하시어 알맞게 맞추시면 됩니다.
+    ##########################################
+    with app.app_context():
+        OrderModel.query.filter(OrderModel.modified_at + datetime.timedelta(days=1) < datetime.datetime.now()).delete()
+        db.session.commit()
+    ##########################################
+
 @api.route('/deidentify')
 class PubSubHandler(Resource):
     def post(self):
@@ -82,7 +89,8 @@ api.add_namespace(Admin, '/admin/')
 
 scheduler = BackgroundScheduler()
 # scheduler.add_job(func=job_delete_img, trigger="interval", seconds=60)
-scheduler.add_job(func=job_delete_img, trigger="cron", hour=0, minute=0, second=0) # 매일 자정
+scheduler.add_job(func=job_delete_img, trigger="cron", hour=0, minute=0, second=0)  # 매일 자정
+scheduler.add_job(func=job_delete_privacy, trigger="cron", hour=0, minute=0, second=0)  # 매일 자정
 
 scheduler.start()
 
