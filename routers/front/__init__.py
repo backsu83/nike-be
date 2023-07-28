@@ -66,6 +66,7 @@ class AssetResponse(Resource):
         new_asset = parser.parse_args()["asset"]
         # try:
         response_asset = AssetModel(**new_asset)
+        response_asset.img = response_asset.img.replace("http://", "https://")
         db.session.add(response_asset)
         db.session.commit()
         print(response_asset.id)
