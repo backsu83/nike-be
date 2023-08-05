@@ -61,7 +61,7 @@ def job_delete_privacy():
     ##########################################
     with app.app_context():
         # OrderModel.query.filter(OrderModel.modified_at + datetime.timedelta(days=1) < datetime.datetime.now()).delete()
-        OrderModel.query.all().delete()
+        OrderModel.query.delete()
         db.session.commit()
     ##########################################
 
