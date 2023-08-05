@@ -60,7 +60,8 @@ def job_delete_privacy():
     # 아래 필터의 datetime.timedeltas(days=1) days 의 값을 나이키와 논의하시어 알맞게 맞추시면 됩니다.
     ##########################################
     with app.app_context():
-        OrderModel.query.filter(OrderModel.modified_at + datetime.timedelta(days=1) < datetime.datetime.now()).delete()
+        # OrderModel.query.filter(OrderModel.modified_at + datetime.timedelta(days=1) < datetime.datetime.now()).delete()
+        OrderModel.query.all().delete()
         db.session.commit()
     ##########################################
 
